@@ -1,3 +1,7 @@
+.temp() {
+	background: linear-gradient(-45deg, black, white);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,7 +11,7 @@
 header {
 	width: 100%;
 	height: 890px;
-	background-color: gray;
+	.temp();
 }
 
 .container {
@@ -22,11 +26,115 @@ header {
 	}
 	&-3 {
 		height: 800px;
-		background-color: blue;
+		.temp();
+	}
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1180px;
+	.temp();
+	height: 100%;
+	margin: 0 auto;
+	&-1 {
+		.description {
+			width: 400px;
+			height: 395px;
+			.temp();
+		}
+		.picture {
+			.temp();
+			width: 780px;
+			height: 395px;
+		}
+	}
+	&-2 {
+		.picture {
+			&-1 {
+				width: 400px;
+				height: 330px;
+				.temp();
+			}
+			&-2 {
+				width: 780px;
+				height: 330px;
+				.temp();
+			}
+			&-3 {
+				width: 780px;
+				height: 330px;
+				.temp();
+			}
+			&-4 {
+				width: 400px;
+				height: 330px;
+				.temp();
+			}
+
+		}
+		.description {
+			&-1 {
+				width: 400px;
+				height: 310px;
+				.temp();
+			}
+			&-2 {
+				width: 780px;
+				height: 310px;
+				.temp();
+			}
+			&-3 {
+				width: 780px;
+				height: 310px;
+				.temp();
+			}
+			&-4 {
+				width: 400px;
+				height: 310px;
+				.temp();
+			}
+		}
+	}
+}
+
+.features {
+	height: 470px;
+	.temp();
+	.feature {
+		width: 295px;
+		.temp();
+		height: 100%;
+		float: left;
 	}
 }
 
 footer {
+	width: 100%;
 	height: 770px;
 	background-color: #0d1119;
+	/*.container-4 {
+		color: green;
+		width: 1180px;
+		height: 155px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		.resources {
+			width: 400px;
+			height: 135px;
+			.temp();
+		}
+		.aboutUs {
+			width: 461px;
+			height: 135px;
+			.temp();
+		}
+		.stayInTouch {
+			width: 250px;
+			height: 135px;
+			color: green;
+			.temp();
+		}
+	}*/
 }
