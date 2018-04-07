@@ -39,35 +39,35 @@ header {
 	margin: 0 auto;
 	&-1 {
 		.description {
-			width: 400px;
+			width: 34%;
 			height: 395px;
 			.temp();
 		}
 		.picture {
 			.temp();
-			width: 780px;
+			width: 66%;
 			height: 395px;
 		}
 	}
 	&-2 {
 		.picture {
 			&-1 {
-				width: 400px;
+				width: 34%;
 				height: 330px;
 				.temp();
 			}
 			&-2 {
-				width: 780px;
+				width: 66%;
 				height: 330px;
 				.temp();
 			}
 			&-3 {
-				width: 780px;
+				width: 66%;
 				height: 330px;
 				.temp();
 			}
 			&-4 {
-				width: 400px;
+				width: 34%;
 				height: 330px;
 				.temp();
 			}
@@ -75,22 +75,22 @@ header {
 		}
 		.description {
 			&-1 {
-				width: 400px;
+				width: 34%;
 				height: 310px;
 				.temp();
 			}
 			&-2 {
-				width: 780px;
+				width: 66%;
 				height: 310px;
 				.temp();
 			}
 			&-3 {
-				width: 780px;
+				width: 66%;
 				height: 310px;
 				.temp();
 			}
 			&-4 {
-				width: 400px;
+				width: 34%;
 				height: 310px;
 				.temp();
 			}
@@ -99,13 +99,15 @@ header {
 }
 
 .features {
+	width: 100%;
 	height: 470px;
+	display: flex;
+	justify-content: space-between;
 	.temp();
 	.feature {
-		width: 295px;
-		.temp();
+		flex-grow: 1;
 		height: 100%;
-		float: left;
+		.temp();
 	}
 }
 
