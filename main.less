@@ -41,15 +41,31 @@ header {
 	height: 100%;
 	margin: 0 auto;
 	&-1 {
-		.description {
-			width: 34%;
+		.fitness-first{
+			display: flex;
+			width: 100%;
 			height: 395px;
-			.temp();
+			.description {
+				flex-grow: 1;
+				.temp();
+			}
+			.picture {
+				.temp();
+				flex-grow: 2;
+			}
 		}
-		.picture {
-			.temp();
-			width: 66%;
+		.your-body{
+			display: flex;
+			width: 100%;
 			height: 395px;
+			.description {
+				flex-grow: 1;
+				.temp();
+			}
+			.picture {
+				.temp();
+				flex-grow: 2;
+			}
 		}
 	}
 	&-2 {
