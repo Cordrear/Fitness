@@ -24,6 +24,8 @@ header {
 		background-color: #a2ca28;
 	}
 	&-2 {
+		display: flex;
+		flex-direction: column;
 		height: 1280px;
 		background-color: #fd634e;
 	}
@@ -69,7 +71,68 @@ header {
 		}
 	}
 	&-2 {
-		.picture {
+		flex-grow: 1;
+		.lifestyle {
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+			.temp();
+			.picture {
+				.temp();
+				flex-grow: 1;
+			}
+			.description {
+				.temp();
+				flex-grow: 1;
+			}
+
+		}
+		.summer-of-fun {
+			display: flex;
+			flex-direction: column;
+			flex-grow: 2;
+			.temp();
+			.picture {
+				.temp();
+				flex-grow: 1;
+			}
+			.description {
+				.temp();
+				flex-grow: 1;
+			}
+		}
+	}
+	&-3 {
+		flex-grow: 1;
+		.get-involved {
+			display: flex;
+			flex-direction: column;
+			flex-grow: 2;
+			.temp();
+			.picture {
+				.temp();
+				flex-grow: 1;
+			}
+			.description {
+				.temp();
+				flex-grow: 1;
+			}
+		}
+		.eating-habits {
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+			.temp();
+			.picture {
+				.temp();
+				flex-grow: 1;
+			}
+			.description {
+				.temp();
+				flex-grow: 1;
+			}
+		}
+		/*.picture {
 			&-1 {
 				width: 34%;
 				height: 330px;
@@ -113,7 +176,7 @@ header {
 				height: 310px;
 				.temp();
 			}
-		}
+		}*/
 	}
 }
 
