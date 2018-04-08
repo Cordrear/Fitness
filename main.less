@@ -56,6 +56,39 @@ header {
 	.temp();
 	height: 100%;
 	margin: 0 auto;
+
+	.description {
+		max-width: 34%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.temp();
+		.description-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 70%;
+			height: 70%;
+			h2 {
+				margin-bottom: 10px;
+			}
+			h1 {
+				text-transform: uppercase;
+			}
+			.icon {
+				width: 20px;
+				height: 30px;
+				margin: 10px auto;
+				.temp();
+			}
+			p {
+				text-align: center;
+			}
+			.temp();
+		}
+	}
+
 	&-1 {
 		.fitness-first{
 			display: flex;
@@ -65,39 +98,8 @@ header {
 			justify-content: center;
 			
 			.description {
-
 				flex-grow: 1;
-				max-width: 34%;
-				height: 100%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
 				.temp();
-				.description-content {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					width: 70%;
-					height: 70%;
-					h2 {
-						margin-bottom: 10px;
-					}
-					h1 {
-						text-transform: uppercase;
-					}
-					.icon {
-						width: 20px;
-						height: 30px;
-						margin: 10px auto;
-						.temp();
-					}
-					p {
-						text-align: center;
-					}
-					.temp();
-					
-					
-				}
 			}
 			.picture {
 				.temp();
