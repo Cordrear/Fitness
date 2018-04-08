@@ -51,14 +51,12 @@ header {
 
 .content {
 	display: flex;
-	flex-wrap: wrap;
 	width: @content-width;
 	.temp();
 	height: 100%;
 	margin: 0 auto;
 
 	.description {
-		max-width: 34%;
 		height: 100%;
 		display: flex;
 		align-items: center;
@@ -67,11 +65,11 @@ header {
 		.description-content {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
 			width: 70%;
 			height: 70%;
 			h2 {
 				margin-bottom: 10px;
+				text-transform: uppercase;
 			}
 			h1 {
 				text-transform: uppercase;
@@ -83,13 +81,23 @@ header {
 				.temp();
 			}
 			p {
-				text-align: center;
+				text-align: left;
 			}
 			.temp();
 		}
 	}
 
 	&-1 {
+		flex-wrap: wrap;
+		.description {
+			max-width: 34%;
+			.description-content {
+				align-items: center;
+				p {
+					text-align: center;
+				}
+			}
+		}
 		.fitness-first{
 			display: flex;
 			width: 100%;
@@ -123,17 +131,19 @@ header {
 	&-2 {
 		flex-grow: 1;
 		.lifestyle {
+			max-width: 34%;
 			display: flex;
 			flex-direction: column;
 			flex-grow: 1;
 			.temp();
 			.picture {
 				.temp();
-				flex-grow: 1;
+				height: 50%;
 			}
 			.description {
 				.temp();
-				flex-grow: 1;
+				height: 50%;
+
 			}
 
 		}
@@ -145,11 +155,16 @@ header {
 			.picture {
 				.temp();
 				flex-grow: 1;
+				height: 50%;
 			}
 			.description {
 				.temp();
 				flex-grow: 1;
+				height: 50%;
 			}
+		}
+		h1{
+			text-align: left;
 		}
 	}
 	&-3 {
@@ -162,10 +177,12 @@ header {
 			.picture {
 				.temp();
 				flex-grow: 1;
+				height: 50%;
 			}
 			.description {
 				.temp();
 				flex-grow: 1;
+				height: 50%;
 			}
 		}
 		.eating-habits {
@@ -176,10 +193,12 @@ header {
 			.picture {
 				.temp();
 				flex-grow: 1;
+				height: 50%;
 			}
 			.description {
 				.temp();
 				flex-grow: 1;
+				height: 50%;
 			}
 		}
 		/*.picture {
