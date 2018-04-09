@@ -41,13 +41,13 @@ header {
 .container {
 	width: 100%;
 	&-1 {
-		height: 1260px;
+		/*height: 1260px;*/
 		background-color: #a2ca28;
 	}
 	&-2 {
 		display: flex;
 		flex-direction: column;
-		height: 1280px;
+		/*height: 1280px;*/
 		background-color: #fd634e;
 	}
 	&-3 {
@@ -137,21 +137,23 @@ header {
 		}
 	}
 	&-2 {
-		flex-grow: 1;
+		display: flex;
+		flex-wrap: wrap;
 		.lifestyle {
-			max-width: 34%;
 			display: flex;
 			flex-direction: column;
-			flex-grow: 1;
+
 			.temp();
 			.picture {
 				background-image: url('img/run.jpg');
 				background-size:cover;
-				height: 50%;
+				width: 400px;
+				height: 310px;
 			}
 			.description {
 				.temp();
-				height: 50%;
+				width: 400px;
+				height: 310px;
 
 			}
 
@@ -159,41 +161,44 @@ header {
 		.summer-of-fun {
 			display: flex;
 			flex-direction: column;
-			flex-grow: 2;
+
 			.temp();
 			.picture {
 				background-image: url('img/boy.jpg');
 				background-size:cover;
-				flex-grow: 1;
-				height: 50%;
+
+				width: 780px;
+				height: 310px;
 			}
 			.description {
 				.temp();
-				flex-grow: 1;
-				height: 50%;
+
+				width: 780px;
+				height: 310px;
 			}
 		}
 		h1{
 			text-align: left;
 		}
-	}
-	&-3 {
-		flex-grow: 1;
+/*---*/
+
 		.get-involved {
 			display: flex;
 			flex-direction: column;
-			flex-grow: 2;
+
 			.temp();
 			.picture {
 				background-image: url('img/grapes.jpg');
 				background-size:cover;
-				flex-grow: 1;
-				height: 50%;
+
+				width: 780px;
+				height: 310px;
 			}
 			.description {
 				.temp();
-				flex-grow: 1;
-				height: 50%;
+
+				width: 780px;
+				height: 310px;
 			}
 		}
 		.eating-habits {
@@ -205,12 +210,14 @@ header {
 				background-image: url('img/fruit.jpg');
 				background-size:cover;
 				flex-grow: 1;
-				height: 50%;
+				width: 400px;
+				height: 310px;
 			}
 			.description {
 				.temp();
 				flex-grow: 1;
-				height: 50%;
+				width: 400px;
+				height: 310px;
 			}
 		}
 		/*.picture {
