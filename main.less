@@ -60,7 +60,6 @@ header {
 .content {
 	display: flex;
 	width: @content-width;
-	.temp();
 	height: 100%;
 	margin: 0 auto;
 
@@ -273,7 +272,6 @@ header {
 	height: 470px;
 	display: flex;
 	justify-content: space-between;
-	.temp();
 	.feature {
 		display: flex;
 		flex-direction: column;
@@ -281,22 +279,35 @@ header {
 		flex-grow: 1;
 		flex-basis: 25%;
 		height: 100%;
-		.temp();
 		.feature-content {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			height: 50%;
-			.temp();
+			height: 50%;;
 			.icon {
-				width: 40px;
-				height: 40px;
-				.temp();
+				width: 44px;
+				height: 44px;
 			}
 			.text {
 				width: 95%;
 			}
 		}
+	}
+	.feature:nth-child(1) .icon{
+		background-image: url('img/features-sprite.png');
+	}
+	.feature:nth-child(2) .icon{
+		background-image: url('img/features-sprite.png');
+		background-position: -44px 0;
+	}
+	.feature:nth-child(3) .icon{
+		background-image: url('img/features-sprite.png');
+		background-position: -88px 0;
+		width: 46px;
+	}
+	.feature:nth-child(4) .icon{
+		background-image: url('img/features-sprite.png');
+		background-position: -134px 0;
 	}
 }
 
