@@ -23,7 +23,12 @@
 
 @font-face {
 	font-family: "AvenirNextRoundedPro-Demi";
-	src: url("/AvenirNextRoundedPro-Demi.otf") format("opentype");
+	src: url("fonts/AvenirNextRoundedPro-Demi.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "AvenirNextRoundedPro-Reg";
+	src: url("fonts/AvenirNextRoundedPro-Reg.otf") format("opentype");
 }
 
 * {
@@ -38,6 +43,7 @@ header {
 	width: 100%;
 	min-width: @content-width;
 	height: 890px;
+	position: relative;
 	background-image: url('img/bg.jpg');
 	background-size:cover;
 	.menu{
@@ -88,6 +94,29 @@ header {
 				font-size: 14px;
 				color: white;
 			}
+		}
+	}
+	.slogan {
+		position: absolute;
+		left: 10%;
+		bottom: 15%;
+		color: white;
+		text-transform: uppercase;
+		h1 {
+			font-family: 'AvenirNextRoundedPro-Reg', sans-serif;
+			font-size: 40px;
+		}
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			font-weight: bold;
+			margin-left: 45%;
+		}
+		.red {
+			color: @red-color;
+		}
+		.green {
+			color: @green-color;
 		}
 	}
 }
