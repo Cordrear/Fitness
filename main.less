@@ -171,10 +171,10 @@ header {
 		.description-content {
 			display: flex;
 			flex-direction: column;
-			width: 75%;
+			width: 80%;
 			height: 75%;
+			position: relative;
 			h2 {
-				margin-bottom: 10px;
 				text-transform: uppercase;
 				font-family: "Montserrat-Regular", sans-serif;
 				font-size: 14px;
@@ -189,10 +189,14 @@ header {
 				margin-bottom: 20px;
 			}
 			.icon {
-				width: 20px;
-				height: 30px;
 				margin: 0 auto 20px;
-				.temp();
+				background-repeat: no-repeat;
+				background-size: contain;
+				&.corner {
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
 			}
 			p {
 				text-align: left;
@@ -207,14 +211,17 @@ header {
 				color: @green-color;
 			}
 		}
-	}
-
-	.description.green {
-		background-color: @green-color;
-		h1, h2, p {
-			color: white;
+		&.green {
+			background-color: @green-color;
+			h1, h2, p {
+				color: white;
+			}
+		}
+		&.shadow {
+			box-shadow: 0 0 62px rgba(0,0,0,0.2);
 		}
 	}
+
 
 	&-1 {
 		flex-direction: column;
@@ -240,6 +247,11 @@ header {
 				background-size:cover;
 				flex-grow: 2;
 			}
+			.icon {
+				width: 20px;
+				height: 25px;
+				background-image: url('img/codrops.svg');
+			}
 		}
 		.your-body{
 			display: flex;
@@ -253,6 +265,11 @@ header {
 				background-size:cover;
 				flex-grow: 2;
 			}
+			.icon {
+				width: 20px;
+				height: 25px;
+				background-image: url('img/codrops.svg');
+			}
 		}
 	}
 	&-2 {
@@ -261,8 +278,6 @@ header {
 		.lifestyle {
 			display: flex;
 			flex-direction: column;
-
-
 			.picture {
 				background-image: url('img/run.jpg');
 				background-size:cover;
@@ -270,12 +285,14 @@ header {
 				height: 310px;
 			}
 			.description {
-
 				width: 400px;
 				height: 310px;
-
 			}
-
+			.icon {
+				width: 30px;
+				height: 30px;
+				background-image: url('img/man.png');
+			}
 		}
 		.summer-of-fun {
 			display: flex;
@@ -283,7 +300,7 @@ header {
 
 			.picture {
 				background-image: url('img/boy.jpg');
-				background-size:cover;
+				background-size: cover;
 
 				width: 780px;
 				height: 310px;
@@ -298,32 +315,29 @@ header {
 		h1{
 			text-align: left;
 		}
-/*---*/
-
 		.get-involved {
 			display: flex;
 			flex-direction: column;
-
-
 			.picture {
 				background-image: url('img/grapes.jpg');
 				background-size:cover;
-
 				width: 780px;
 				height: 310px;
 			}
 			.description {
-
-
 				width: 780px;
 				height: 310px;
+			}
+			.icon {
+				width: 35px;
+				height: 40px;
+				background-image: url('img/icon-grapes.png');
 			}
 		}
 		.eating-habits {
 			display: flex;
 			flex-direction: column;
 			flex-grow: 1;
-
 			.picture {
 				background-image: url('img/fruit.jpg');
 				background-size:cover;
@@ -332,57 +346,16 @@ header {
 				height: 310px;
 			}
 			.description {
-
 				flex-grow: 1;
 				width: 400px;
 				height: 310px;
 			}
+			.icon {
+				width: 35px;
+				height: 40px;
+				background-image: url('img/icon-mango.png');
+			}
 		}
-		/*.picture {
-			&-1 {
-				width: 34%;
-				height: 330px;
-				.temp();
-			}
-			&-2 {
-				width: 66%;
-				height: 330px;
-				.temp();
-			}
-			&-3 {
-				width: 66%;
-				height: 330px;
-				.temp();
-			}
-			&-4 {
-				width: 34%;
-				height: 330px;
-				.temp();
-			}
-
-		}
-		.description {
-			&-1 {
-				width: 34%;
-				height: 310px;
-				.temp();
-			}
-			&-2 {
-				width: 66%;
-				height: 310px;
-				.temp();
-			}
-			&-3 {
-				width: 66%;
-				height: 310px;
-				.temp();
-			}
-			&-4 {
-				width: 34%;
-				height: 310px;
-				.temp();
-			}
-		}*/
 	}
 }
 
