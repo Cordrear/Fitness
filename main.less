@@ -7,21 +7,24 @@
 @red-color: #fd634e;
 
 @font-face {
- font-family: "ProximaNova-Regular";
- src: url("/fonts/ProximaNova-Regular.ttf") format("ttf");
+	font-family: "ProximaNova-Regular";
+	src: url("/fonts/ProximaNova-Regular.ttf") format("ttf");
 }
 
 @font-face {
- font-family: "Montserrat-Regular";
- src: url("/fonts/Montserrat-Regular.ttf") format("ttf");
+	font-family: "Montserrat-Regular";
+	src: url("/fonts/Montserrat-Regular.ttf") format("ttf");
 }
 
 @font-face {
- font-family: "AvenirNextRoundedPro-Med";
- src: url("/fonts/AvenirNextRoundedPro-Med.otf") format("opentype");
+	font-family: "AvenirNextRoundedPro-Med";
+	src: url("/fonts/AvenirNextRoundedPro-Med.otf") format("opentype");
 }
 
-
+@font-face {
+	font-family: "AvenirNextRoundedPro-Demi";
+	src: url("/AvenirNextRoundedPro-Demi.otf") format("opentype");
+}
 
 * {
 	margin: 0;
@@ -44,10 +47,32 @@ header {
 		justify-content: space-between;
 		margin: 0 auto;
 		.logo {
-			width: 160px;
+			display: flex;
+			justify-content: space-between;
+			width: 150px;
 			height: 50px;
 			margin: 50px;
-			.temp();
+			.icon {
+				width: 30px;
+				height: 100%;
+				/*margin-right: 10px;*/
+				background-image: url('img/codrops_red.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			p {
+				text-transform: uppercase;
+				font-family: 'AvenirNextRoundedPro-Med', sans-serif;
+				font-size: 24px;
+				color: white;
+				letter-spacing: 2px;
+			}
+			.line {
+				width: 38px;
+				height: 3px;
+				margin-left: 2px;
+				background-color: @green-color;
+			}
 		}
 		nav {
 			width: 650px;
